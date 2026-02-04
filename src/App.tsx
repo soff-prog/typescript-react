@@ -1,6 +1,9 @@
-import { Funciones } from "./typescript/Funciones";
+//import { Funciones } from "./typescript/Funciones";
 //import { Interfaces } from "./typescript/Interfaces";
 //import { TiposBasicos } from "./typescript/TiposBasicos";
+//import { Contador } from "./typescript/Contador";
+
+import { HookUseEffect } from "./typescript/HookUseEffect";
 
 //componente react -> rafc + enter
 const App = () => {
@@ -10,7 +13,9 @@ const App = () => {
       <hr />
       {/* <TiposBasicos/> */}
       {/* <Interfaces/> */}
-      <Funciones/>
+      {/* <Funciones/> */}
+      {/* <Contador/> */}
+      <HookUseEffect/>
     </div>
   )
 }
