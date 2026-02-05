@@ -2,8 +2,9 @@
 //import { Interfaces } from "./typescript/Interfaces";
 //import { TiposBasicos } from "./typescript/TiposBasicos";
 //import { Contador } from "./typescript/Contador";
+//import { HookUseEffect } from "./typescript/HookUseEffect";
 
-import { HookUseEffect } from "./typescript/HookUseEffect";
+import Usuarios from "./typescript/Usuarios";
 
 //componente react -> rafc + enter
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
       {/* <Interfaces/> */}
       {/* <Funciones/> */}
       {/* <Contador/> */}
-      <HookUseEffect/>
+      {/* <HookUseEffect/> */}
+      <Usuarios/>
     </div>
   )
 }
