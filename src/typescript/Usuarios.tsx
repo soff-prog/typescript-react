@@ -19,12 +19,19 @@ export const Usuarios = () => {
     }, [])
 
     //funcion para mostrar dinamicamente la lista de usuarios en la tabla
-    const itemUsuario = (usuario: Usuario) => {
+    const itemUsuario = ({avatar, first_name, last_name, email}: Usuario) => {
         return(
             <tr>
-                <td>Foto</td>
-                <td>Soff</td>
-                <td>soff@gmail.com</td>
+                <td>
+                    <img src={avatar} 
+                         alt={first_name} 
+                         style={{
+                            width: 50,
+                            borderRadius: 8
+                        }} />
+                </td>
+                <td>{first_name} {last_name}</td>
+                <td>{email}</td>
             </tr>
         )
     }
@@ -41,11 +48,9 @@ export const Usuarios = () => {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Foto</td>
-                    <td>Soff</td>
-                    <td>soff@gmail.com</td>
-                </tr>
+                {
+                    users.map((usuario: Usuario) => itemUsuario(usuario))
+                }
             </tbody>
         </table>
     </div>

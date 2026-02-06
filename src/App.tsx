@@ -4,7 +4,9 @@
 //import { Contador } from "./typescript/Contador";
 //import { HookUseEffect } from "./typescript/HookUseEffect";
 
-import Usuarios from "./typescript/Usuarios";
+import { Usuarios } from "./typescript/Usuarios";
+
+
 
 //componente react -> rafc + enter
 const App = () => {
